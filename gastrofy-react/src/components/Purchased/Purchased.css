@@ -1,0 +1,108 @@
+.purchasedMain {
+    width: 100%;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    background-color: #eef2f3;
+    z-index: -1;
+}
+
+.purchasedMainWrapper {
+    max-width: 1150px;
+    height: 90vh;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.purchasedMain h3 {
+    color: #212529;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.purchasedMain p {
+    color: #333333;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.plusList {
+    position: relative;
+}
+
+.plus {
+    width: 230px;
+    margin-top: 10px;
+}
+
+.plusList ol {
+    position: absolute;
+    top: 155px;
+    left: 260px;
+}
+
+.plusList span {
+    color: #212529;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.plusList li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.arrow {
+    position: absolute;
+    left: 220px;
+    top: 120px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .purchasedMainWrapper {
+        padding: 40px 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .purchasedMain {
+        top: 12vh;
+    }
+
+    .purchasedMainWrapper {
+        height: 88vh;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .purchasedMainWrapper {
+        padding: 40px 20px;
+    }
+
+    .plus {
+        width: 170px;
+    }
+
+    .arrow {
+        left: 160px;
+        top: 90px;
+    }
+
+    .plusList li {
+        font-size: 12px;
+    }
+
+    .plusList span {
+        font-size: 12px;
+    }
+
+    .plusList ol {
+        left: 196px;
+        top: 120px;
+    }
+
+}

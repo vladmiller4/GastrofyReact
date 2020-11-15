@@ -1,0 +1,245 @@
+.headerMain {
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0px 1px 8px -1px rgba(0, 0, 0, 0.7);
+}
+
+.header {
+    max-width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.headerLogo a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.headerCenter {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerCenterLeft {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #4b4c4b;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.headerCenterLeft p {
+    height: 30px;
+}
+
+.headerCenterRight {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerCenterRight a {
+    color: #212529;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 35px;
+}
+
+.navLink {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.headerNav {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerNavPosition {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconLink {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.iconLink p {
+    font-size: 12px;
+    color: #333333;
+}
+
+.iconLink svg {
+    font-size: 20px;
+    color: #333333;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.iconLinkActive p {
+    color: #57CA8E;
+}
+
+.iconLinkActive svg {
+    color: #57CA8E;
+}
+
+.nav-active {
+    border-bottom: 2px solid #000;
+}
+
+.nav-active p {
+    font-weight: 700;
+}
+
+.navCross {
+    display: none;
+}
+
+.headerCross {
+    display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+    .header {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    
+    .headerMain {
+        height: 12vh;
+    }
+    
+    .header {
+        padding: 0 0px;
+    }
+
+    .headerLogo {
+        display: none;
+    }
+
+    .headerNav {
+        display: none;
+    }
+
+    .headerCenter {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .headerCenterLeft {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .headerCenterLeft p {
+        font-size: 18px;
+    }
+
+    .headerCenterRight {
+        width: 100%;
+        height: 50%;
+        justify-content: space-around;
+    }
+
+    .headerCenterRight a {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .navLink {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navCross {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        cursor: pointer;
+    }
+
+    .headerCross {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: absolute;
+        left: 0px;
+        height: 100vh;
+        top: 0px;
+        background-color: #fff;
+        width: 280px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in;
+        padding-left: 20px;
+    }
+
+    .headerCrossList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .headerCrossList li {
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    .headerCrossList li a {
+        color: #666666;
+        font-size: 25px;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+    #crossLinkActive {
+        color: #57CA8E;
+    }
+
+    .headerCross svg {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
